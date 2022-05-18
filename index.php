@@ -7,7 +7,9 @@ ini_set('display_errors', FALSE); // Error/Exception display, use FALSE only in 
 
 ini_set('log_errors', TRUE); // Error/Exception file logging engine.
 
-ini_set("error_log", "/var/www/html/expense-app/php-error.log");
+// ini_set("error_log", "/var/www/html/expense-app/php-error.log");
+// error log in dev environment windows
+ini_set("error_log", "php-error.log");
 error_log( "Hello, errors!" );
 
 //tail -f /tmp/php-error.log
