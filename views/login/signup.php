@@ -14,7 +14,7 @@
     
         <form action="<?php echo constant('URL'); ?>signup/newUser" method="POST">
         <div></div>
-            <h2>Registrarse</h2>
+            <h2>Regístrese</h2>
 
             <p>
                 <label for="username">Username</label>

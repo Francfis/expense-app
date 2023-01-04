@@ -234,6 +234,7 @@ class UserModel extends Model implements IModel{
     public function setPassword($password, $hash = true){ 
         if($hash){
             $this->password = $this->getHashedPassword($password);
+            error_log($this->password);
         }else{
             $this->password = $password;
         }
